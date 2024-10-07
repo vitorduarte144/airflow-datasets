@@ -1,0 +1,10 @@
+my_dbt_project:
+  outputs:
+    dev:
+      database: dbt_example
+      role: accountadmin
+      schema: PUBLIC
+      threads: 4
+      type: snowflake
+      warehouse: compute_wh
+  target: dev
